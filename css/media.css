@@ -1,0 +1,316 @@
+/* @media (max-width: 1440px) {} */
+/* @media (max-width: 1366px) {} */
+/* @media (max-width: 1320px) {} */
+/* @media (max-width: 1290px) {} */
+@media (max-width: 1140px) {
+  .nav {
+   /* background: #282828; 
+   top: 0;
+   width: 100%;
+   background: rgba(1, 3, 5, 0.8);
+   position: sticky;
+   top: 0;
+   z-index: 999;
+   backdrop-filter: blur(10px);
+   background: #282828;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 999;
+   backdrop-filter: blur(10px); */
+   padding: 20px 0;
+ }
+
+ .nav__menu {
+   width: 50px;
+   height: 50px;
+   position: relative;
+   /* display: -webkit-box; */
+   /* display: -ms-flexbox; */
+   display: flex;
+   /* -webkit-box-pack: center; */
+       /* -ms-flex-pack: center; */
+           justify-content: center;
+   /* -webkit-box-align: center; */
+       /* -ms-flex-align: center; */
+           align-items: center;
+   /* -webkit-transition: 500ms; */
+   transition: 500ms;
+   z-index: 999;
+ }
+ .nav__menu.active {
+   width: 25px;
+   height: 25px;
+   /* -webkit-transform: translate(10px, -20px); */
+           /* transform: translate(10px, -20px); */
+ }
+ .nav__line {
+   position: relative;
+   width: 100%;
+   height: 2px;
+   background: #000;
+   /* -webkit-transition: 500ms; */
+   transition: 500ms;
+ }
+ .nav__line.active {
+   background: transparent;
+ }
+ .nav__line.active::before {
+   /* -webkit-transform: rotate(45deg); */
+           transform: rotate(45deg);
+           background: #fff;
+   top: 0;
+   width: 100%;
+ }
+ .nav__line.active::after {
+   /* -webkit-transform: rotate(-45deg); */
+           transform: rotate(-45deg);
+           background: #fff;
+   top: 0;
+   width: 100%;
+ }
+ .nav__line::before {
+   content: "";
+   position: absolute;
+   top: -10px;
+   right: 0;
+   width: 60%;
+   height: 100%;
+   background: #000;
+   /* -webkit-transition: 500ms; */
+   transition: 500ms;
+ }
+ .nav__line::after {
+   content: "";
+   position: absolute;
+   top: 10px;
+   right: 0;
+   width: 80%;
+   height: 100%;
+   background: #000;
+   /* -webkit-transition: 500ms; */
+   transition: 500ms;
+ }
+ .list {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* -webkit-transform: scale(0); */
+           transform: scale(0);
+   /* background: var(--body); */
+   /* -webkit-transition: 500ms; */
+   transition: 500ms;
+   /* -webkit-box-shadow: 0 0 35px 5px var(--link); */
+           /* box-shadow: 0 0 35px 5px var(--link); */
+   /* -webkit-box-pack: space-evenly; */
+       /* -ms-flex-pack: space-evenly; */
+           justify-content: space-evenly;
+ }
+ .list.active {
+   /* -webkit-transform: scale(1); */
+           transform: scale(1);
+           background: rgba(1, 3, 5, 0.8);
+           /* background: #fb4300; */
+           flex-direction: column;
+           backdrop-filter: blur(10px);
+           position: fixed;
+           top: 0;
+           left: 0;
+           /* transform: translateX(-110%); */
+           transition: .4s;
+           /* flex-direction: column; */
+           min-height: 100vh;
+           /* max-width: -webkit-max-content; */
+           max-width: -moz-max-content;
+           /* max-width: max-content; */
+           justify-content: center;
+           /* padding: 10px 20px; */
+           /* align-items: flex-start; */
+           row-gap: 30px;
+           /* background: #1b1b1b; */
+           /* box-shadow: 5px 0 15px rgb(0 0 0 / 50%); */
+           /* z-index: 999; */
+       
+ }
+ .link {
+   /* margin: 0; */
+   /* padding: 29px 0; */
+   color: #fff;
+ }
+
+ .text-section  {
+   flex-direction: column;
+ }
+
+ .texta {
+   text-align: center;
+   max-width: unset;
+ }
+
+ .main_text {
+   max-width: unset;
+ }
+
+ .main__text {
+   max-width: unset;
+ }
+}
+/* @media (max-width: 1024px) {} */
+@media (max-width: 992px) {
+
+
+.ul {
+   flex-direction: column;
+   /* row-gap: 20px; */
+}
+
+.footer__link {
+   display: inline-block;
+   margin-bottom: 20px;
+}
+
+/* .nav {
+   padding: 20px 0;
+} */
+
+/* .list {
+   display: none;
+}
+
+.nav__menu {
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+}
+
+.nav__line {
+   width: 100%;
+   height: 2px;
+   background: #151515;
+   position: relative;
+   transition: .4s;
+}
+
+.nav__line::before,
+.nav__line::after {
+   content: '';
+   position: absolute;
+   top: -10px;
+   width: 100%;
+   height: 100%;
+   background: #151515;
+   transition: .4s;
+}
+
+.nav__line::after {
+   top: 10px;
+}
+
+.nav__menu:hover .nav__line {
+   background: transparent;
+}
+
+.nav__menu:hover .nav__line::before {
+   top: 0;
+   transform: rotate(45deg);
+}
+.nav__menu:hover .nav__line::after {
+   top: 0;
+   transform: rotate(-45deg);
+} */
+
+
+
+.main__section {
+   /* flex-wrap: wrap; */
+   /* row-gap: 4px; */
+   /* flex-direction: column; */
+   /* display: flex; */
+   /* justify-content: center; */
+   /* flex-wrap: wrap; */
+   /* margin-bottom: 20px */
+   flex-wrap: wrap;
+    row-gap: 40px;
+ }
+ 
+ .main__item {
+   overflow: hidden;
+   width: 48%;
+}
+
+
+.main__section {
+    display: flex;
+    /* align-items: center; */
+    /* margin-top: 35px; */
+    justify-content: space-between;
+}
+
+ .main__info {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   flex-direction: column;
+ }
+
+ /* .texta {
+   line-height: unset;
+ } */
+
+
+}
+@media (max-width: 768px) {
+
+/* .rang{
+   flex-direction: column;
+} */
+/* .foother__apps{
+   margin-bottom: 20px;
+} */
+
+ /* .u {
+   overflow: hidden;
+   width: 48%;
+} */
+
+/* .main__item {
+   overflow: hidden;
+    max-width: 50%;
+} */
+
+/* .logo_svg {
+   margin-bottom: 20px;
+} */
+
+.header__content__content {
+   margin-bottom: 25px;
+}
+
+}
+/* @media (max-width: 736px)  */
+/* @media (max-width: 734px) {} */
+/* @media (max-width: 684px) {} */
+/* @media (max-width: 667px) {} */
+@media (max-width: 576px) {
+
+   .rang {
+      /* flex-wrap: wrap;
+      row-gap: 40px; */
+      flex-direction: column;
+      align-items: start;
+   }
+.img_rasim {
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+}
+/* @media (max-width: 414px) {} */
+/* @media (max-width: 412px) {} */
+/* @media (max-width: 375px) {} */
+/* @media (max-width: 360px) {} */
+/* @media (max-width: 320px) {} */
